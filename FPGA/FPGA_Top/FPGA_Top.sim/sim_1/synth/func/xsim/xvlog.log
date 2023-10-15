@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.sim/sim_1/synth/func/xsim/Top_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-311] analyzing module pll_clock
+INFO: [VRFC 10-311] analyzing module pll_clock_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/Top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/UART_TX_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TX_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/UART_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_tb

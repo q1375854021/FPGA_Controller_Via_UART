@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../FPGA_Top.ip_user_files/ipstatic" \
+"Top_tb_time_impl.v" \
+"../../../../../FPGA_Top.srcs/sim_1/new/Top_tb.v" \
+"../../../../../FPGA_Top.srcs/sim_1/new/UART_TX_tb.v" \
+"../../../../../FPGA_Top.srcs/sim_1/new/UART_tb.v" \
+
+# Do not sort compile order
+nosort

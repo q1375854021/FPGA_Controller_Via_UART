@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../FPGA_Top.ip_user_files/ipstatic" \
+"../../../../FPGA_Top.gen/sources_1/ip/pll_clock/pll_clock_clk_wiz.v" \
+"../../../../FPGA_Top.gen/sources_1/ip/pll_clock/pll_clock.v" \
+"../../../../FPGA_Top.srcs/sources_1/new/UART.v" \
+"../../../../FPGA_Top.srcs/sources_1/new/UART_RX.v" \
+"../../../../FPGA_Top.srcs/sources_1/new/UART_TX.v" \
+"../../../../FPGA_Top.srcs/sources_1/new/Uart_TaskCtrl.v" \
+"../../../../FPGA_Top.srcs/sources_1/new/Top.v" \
+"../../../../FPGA_Top.srcs/sources_1/new/Led_Task.v" \
+"../../../../FPGA_Top.srcs/sim_1/new/Top_tb.v" \
+"../../../../FPGA_Top.srcs/sim_1/new/UART_TX_tb.v" \
+"../../../../FPGA_Top.srcs/sim_1/new/UART_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

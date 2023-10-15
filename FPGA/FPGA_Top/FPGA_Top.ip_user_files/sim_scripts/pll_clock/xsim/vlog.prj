@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../ipstatic" \
+"../../../../FPGA_Top.gen/sources_1/ip/pll_clock/pll_clock_clk_wiz.v" \
+"../../../../FPGA_Top.gen/sources_1/ip/pll_clock/pll_clock.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

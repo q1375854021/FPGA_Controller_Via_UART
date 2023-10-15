@@ -1,0 +1,8 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.sim/sim_1/synth/func/xsim/Top_tb_func_synth.v,1697034114,verilog,,D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/Top_tb.v,,Top;glbl;pll_clock;pll_clock_clk_wiz,,,../../../../../FPGA_Top.ip_user_files/ipstatic,,,,,
+D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/Top_tb.v,1696427210,verilog,,D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/UART_TX_tb.v,,Top_tb,,,../../../../../FPGA_Top.ip_user_files/ipstatic,,,,,
+D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/UART_TX_tb.v,1695657949,verilog,,D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/UART_tb.v,,UART_TX_tb,,,../../../../../FPGA_Top.ip_user_files/ipstatic,,,,,
+D:/study/my_diy/STM32_Communicate_FPGA_CLI_Via_UART/FPGA/FPGA_Top/FPGA_Top.srcs/sim_1/new/UART_tb.v,1696073751,verilog,,,,UART_tb,,,../../../../../FPGA_Top.ip_user_files/ipstatic,,,,,

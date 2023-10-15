@@ -1,0 +1,103 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "Top")
+(DATE "Wed Oct 11 22:21:16 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2023.1")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE pll_clock_inst1/inst/clkf_buf)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (77.0:81.0:81.0) (77.0:81.0:81.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pll_clock_inst1/inst/clkin1_ibufg)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (763.3:894.1:894.1) (763.3:894.1:894.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE pll_clock_inst1/inst/clkout1_buf)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (77.0:81.0:81.0) (77.0:81.0:81.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "PLLE2_ADV")
+  (INSTANCE pll_clock_inst1/inst/plle2_adv_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge RST) LOCKED (3000.0:3000.0:3000.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge DEN) (posedge DCLK) (1855.0:1970.0:1970.0) (0.0:0.0:0.0))
+      (SETUPHOLD (negedge DEN) (posedge DCLK) (1855.0:1970.0:1970.0) (0.0:0.0:0.0))
+      (SETUPHOLD (posedge DWE) (posedge DCLK) (1316.0:1398.0:1398.0) (150.0:150.0:150.0))
+      (SETUPHOLD (negedge DWE) (posedge DCLK) (1316.0:1398.0:1398.0) (150.0:150.0:150.0))
+      (SETUPHOLD (posedge DI[15:0]) (posedge DCLK) (1316.0:1398.0:1398.0) (150.0:150.0:150.0))
+      (SETUPHOLD (negedge DI[15:0]) (posedge DCLK) (1316.0:1398.0:1398.0) (150.0:150.0:150.0))
+      (SETUPHOLD (posedge DADDR[6:0]) (posedge DCLK) (1316.0:1398.0:1398.0) (150.0:150.0:150.0))
+      (SETUPHOLD (negedge DADDR[6:0]) (posedge DCLK) (1316.0:1398.0:1398.0) (150.0:150.0:150.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE pll_clock_inst1/inst/plle2_adv_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE top_sys_rstn_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (763.3:894.1:894.1) (763.3:894.1:894.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE top_uart_tx_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2202.9:2370.5:2370.5) (2202.9:2370.5:2370.5))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "Top")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT pll_clock_inst1/inst/clkf_buf/O pll_clock_inst1/inst/plle2_adv_inst/CLKFBIN (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT pll_clock_inst1/inst/clkin1_ibufg/O pll_clock_inst1/inst/plle2_adv_inst/CLKIN1 (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT pll_clock_inst1/inst/plle2_adv_inst/CLKFBOUT pll_clock_inst1/inst/clkf_buf/I (613.3:645.6:645.6) (613.3:645.6:645.6))
+      (INTERCONNECT pll_clock_inst1/inst/plle2_adv_inst/CLKOUT0 pll_clock_inst1/inst/clkout1_buf/I (613.3:645.6:645.6) (613.3:645.6:645.6))
+      (INTERCONNECT pll_clock_inst1/inst/plle2_adv_inst_i_1/O pll_clock_inst1/inst/plle2_adv_inst/RST (613.3:645.6:645.6) (613.3:645.6:645.6))
+      (INTERCONNECT top_sys_rstn_IBUF_inst/O pll_clock_inst1/inst/plle2_adv_inst_i_1/I0 (613.3:645.6:645.6) (613.3:645.6:645.6))
+      )
+    )
+)
+)
